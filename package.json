@@ -1,0 +1,25 @@
+{
+  "name": "lookup",
+  "version": "1.0.0",
+  "description": "A domain and ip lookup tool, and a web server wrapper.",
+  "main": "lookup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewadkins/Lookup.git"
+  },
+  "author": "Eric Wadkins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ewadkins/Lookup/issues"
+  },
+  "homepage": "https://github.com/ewadkins/Lookup#readme",
+  "dependencies": {
+    "geoip-lite": "^1.2.1",
+    "iso-3166-2": "^1.0.0",
+    "parse-domain": "^1.1.0",
+    "whois-ux": "0.0.2"
+  }
+}
