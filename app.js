@@ -41,6 +41,9 @@ function create() {
 	app.use(morgan('dev', { stream: logger.stream }));
 	
 	// Configure paths
+    app.get('/', function(req, res, next) {
+        res.end('Usage: lookup.ericwadkins.com/<domain or IP>');
+    });
 	app.get(/.*/, function(req, res, next) {
         lookup(req.path.slice(1), data => res.end(JSON.stringify(data, null, 4)));
 	});
