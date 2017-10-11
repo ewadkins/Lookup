@@ -97,7 +97,8 @@ function analyze(ip, domain, geo, whoisResults, callback) {
         regionType: regionType,
         city: city,
         latLong: latLong,
-        range: range
+        range: range,
+        whois: whoisResults
     });
 }
 
